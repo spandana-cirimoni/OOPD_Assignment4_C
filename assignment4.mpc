@@ -1,0 +1,35 @@
+// $Id: assignment3.mpc 378 2010-02-07 22:09:38Z hillj $
+
+project (assignment3) {
+  exename = assignment3
+  install = .
+ 
+  specific (make, gnuace) {
+    compile_flags += -std=c++11
+  }
+
+  Source_Files {
+		driver.cpp
+		Addition_Node.cpp
+		Subtraction_Node.cpp
+		Division_Node.cpp
+		Multiplication_Node.cpp
+		Modulus_Node.cpp
+		Expr_Node.cpp
+		Number_Node.cpp
+		Binary_Expr_Node.cpp
+		Unary_Expr_Node.cpp
+		Expr_Node_Visitor.cpp
+		Eval_Expr_Tree.cpp
+		Expr_Evaluator.cpp
+		Expr_Builder.cpp
+		Expr_Tree_Builder.cpp
+		Print_Inorder_Expression.cpp
+	}
+
+  Template_Files {
+    Array.cpp
+    Array_Base.cpp
+    Stack.cpp
+  }
+}
